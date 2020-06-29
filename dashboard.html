@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Constructive HTML Template</title>
+	<title>DASHBOARD</title>
 <!--
 
 Template 2102 Constructive
@@ -20,7 +20,8 @@ http://www.tooplate.com/view/2102-constructive
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/homepage/tooplate-style.css">
-
+	<link rel="stylesheet" href="css/homepage/style.css">
+<script src="./js/dashboard-logic.js"></script>
 	<script>
 		var renderPage = true;
 
@@ -66,8 +67,7 @@ http://www.tooplate.com/view/2102-constructive
 								</a>
 							</li>							
 							<li>
-								<a href="#contact" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-4">
-<!--									<i class="fas fa-comments tm-nav-fa-icon"></i>-->
+								<a href="./index.html" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-4">
 									<span>Log Out</span>
 								</a>
 							</li>
@@ -95,69 +95,57 @@ http://www.tooplate.com/view/2102-constructive
 
 					<!-- section 2 -->
 					<section id="tm-section-2" class="tm-section tm-section-carousel">
+<!--
 						<div>
-							<header class="mb-4"><h2 class="tm-text-shadow">Our Products</h2></header>		            
-							<div class="tm-img-container">
-								<div class="tm-img-slider">
-									<a href="img/gallery-img-01.jpg" class="tm-slider-img"><img src="img/gallery-img-01-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="img/gallery-img-02.jpg" class="tm-slider-img"><img src="img/gallery-img-02-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="img/gallery-img-03.jpg" class="tm-slider-img"><img src="img/gallery-img-03-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="img/gallery-img-04.jpg" class="tm-slider-img"><img src="img/gallery-img-04-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="img/gallery-img-05.jpg" class="tm-slider-img"><img src="img/gallery-img-05-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="img/gallery-img-06.jpg" class="tm-slider-img"><img src="img/gallery-img-06-tn.jpg" alt="Image" class="img-fluid"></a>
-								</div>
-							</div>		            		          
+							<header class="mb-4"><h2 class="tm-text-shadow">Your Books</h2></header>		            
+							<div class="collection">
+								<a href="https://bookscollections.s3.ap-south-1.amazonaws.com/The-Shadow-Out-of-Time.pdf" class="tm-slider-img" target="_blank">
+                                The-Shadow-Out-of-Time</a>
+                                <br>
+								<a href="https://bookscollections.s3.ap-south-1.amazonaws.com/CloudComputing.pdf" class="tm-slider-img" target="_blank">
+                                The-Shadow-Out-of-Time</a>
+                                <br>
+								<a href="https://bookscollections.s3.ap-south-1.amazonaws.com/Eat%2C+Pray%2C+Love+(+PDFDrive.com+).pdf" class="tm-slider-img" target="_blank">
+                                The-Shadow-Out-of-Time</a>
+                                <br>
+								<a href="https://bookscollections.s3.ap-south-1.amazonaws.com/Rich+Dad+Poor+Dad+for+Teens_+The+Secrets+about+Money--That+You+Don't+Learn+in+School!+(+PDFDrive.com+).pdf" class="tm-slider-img" target="_blank">
+                                The-Shadow-Out-of-Time</a>
+                                <br>
+								<a href="https://bookscollections.s3.ap-south-1.amazonaws.com/The+Power+of+Now_+A+Guide+to+Spiritual+Enlightenment+(+PDFDrive.com+).pdf" class="tm-slider-img" target="_blank">
+                                The-Shadow-Out-of-Time</a>
+                                <br>
+								<a href="https://bookscollections.s3.ap-south-1.amazonaws.com/The-Adventures-of-Sherlock-Holmes.pdf" class="tm-slider-img" target="_blank">
+                                The-Shadow-Out-of-Time</a>
+                                <br>
+								<a href="https://bookscollections.s3.ap-south-1.amazonaws.com/The-Invisible-Man.pdf" class="tm-slider-img" target="_blank">
+                                The-Shadow-Out-of-Time</a>
+                                <br>
+								<a href="https://bookscollections.s3.ap-south-1.amazonaws.com/The-Mysterious-Island.pdf" class="tm-slider-img" target="_blank">
+                                The-Shadow-Out-of-Time</a>
+                                <br>
+								<a href="https://bookscollections.s3.ap-south-1.amazonaws.com/The-Shadow-Out-of-Time.pdf" class="tm-slider-img" target="_blank">
+                                The-Shadow-Out-of-Time</a>
+                                <br>
+							</div>
+                            
+-->
+                            <div>
+                        <form id="search" > 
+                            Enter Book ID : <input type="text" id="bookId" class="fadeIn second" name="login" placeholder="cc">
+                            <input type="button" id="submitR" class="fadeIn fourth" onclick="searchAlgo()" value="SEARCH" >
+                               </form>
+                            </div>
 						</div>       		          	
-					</section>
-
-					<!-- section 3 -->
-					<section id="tm-section-3" class="tm-section">						
-						<div class="row mb-4">
-							<header class="col-xl-12"><h2 class="tm-text-shadow">Our Company</h2></header>		
-						</div>
-						<div class="row">
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fab fa-apple tm-icon-circled tm-icon-media"></i>
-									<div class="media-body">
-										<h3>HTML Templates</h3>
-										<p>We provide a variety of templates for you at no cost. Please spread a word about <a href="https://plus.google.com/+tooplate" target="_parent">Tooplate</a> website. Thank you.</p>	
-									</div>
-								</div>
-							</div>	
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fas fa-map-pin mr-4 tm-icon-circled tm-icon-media"></i>	
-									<div class="media-body">
-										<h3>Free Images</h3>
-										<p>Photos by <a href="https://unsplash.com" target="_blank">Unsplash.com</a> website, ac ornare arcu finibus sed. Aenean ultrices nisi sit amet facilisis viverra.</p>	
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fab fa-fly mr-4 tm-icon-circled tm-icon-media"></i>
-									<div class="media-body">
-										<h3>Phasellus eleifend</h3>
-										<p>Phasellus feugiat scelerisque sapien, ac ornare arcu finibus sed. Aenean ultrices nisi sit amet facilisis viverra.</p>		
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fab fa-linode mr-4 tm-icon-circled tm-icon-media"></i>
-									<div class="media-body">
-										<h3>Phasellus eleifend</h3>
-										<p>Phasellus feugiat scelerisque sapien, ac ornare arcu finibus sed. Aenean ultrices nisi sit amet facilisis viverra.</p>	
-									</div>
-								</div>
-							</div>			          		
-						</div>						               
 					</section>
 
 					<!-- section 4 -->
 					<section id="tm-section-4" class="tm-section">
-						LOG OUT!!
+                        <div id="logout-tab">
+						Thanks For Visiting!!
+                       <form id="register"  class="input-group"> 
+                <input type="button" id="submitR" class="fadeIn fourth" onclick="location.href='./index.html';" value="LOG OUT" >
+                               </form>
+                            </div>
 					</section>					
 				</div>	<!-- .tm-content -->							
 				<footer class="footer-link">
@@ -346,5 +334,18 @@ http://www.tooplate.com/view/2102-constructive
 		});
 
 		</script>
+
+<script>
+    function searchAlgo()
+    {
+        bookID=document.getElementById("bookId").value;
+        console.log(arr[bookID]);
+        
+        if(bookID<=8)
+        window.location=arr[bookID];
+        else
+            alert("CHECK ID");
+    }
+</script>
 	</body>
 </html>
