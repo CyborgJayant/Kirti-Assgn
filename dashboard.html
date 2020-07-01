@@ -83,10 +83,10 @@ http://www.tooplate.com/view/2102-constructive
 						<div class="ml-auto">
 							<header class="mb-4"><h1 class="tm-text-shadow">User Details</h1></header>
 							<p class="mb-5 tm-font-big">
-                                <p>
+                                <p id="userNameValue">
                                     Name: Static
                                 </p>
-                                <p>
+                                <p id="collegeNameValue">
                                     College: Static
                                 </p>
                             </p>
@@ -160,6 +160,8 @@ http://www.tooplate.com/view/2102-constructive
 		<div id="preload-03"></div>
 		<div id="preload-04"></div>
 
+
+<script src="./js/auth.js"></script>
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 		<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
@@ -336,6 +338,10 @@ http://www.tooplate.com/view/2102-constructive
 		</script>
 
 <script>
+    //userInfoUpdate
+    var index = location.search.split('xckd=')[1];
+    document.getElementById("userNameValue").innerHTML="Name : "+details[index].name;
+    document.getElementById("collegeNameValue").innerHTML="College : "+details[index].college;
     function searchAlgo()
     {
         bookID=document.getElementById("bookId").value;

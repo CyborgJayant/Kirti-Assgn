@@ -28,7 +28,7 @@
     <form id="login"  class="input-group">
       <input type="text" id="email" class="fadeIn second" name="login" placeholder="email">
       <input type="password" id="password" class="fadeIn third" name="login" placeholder="password">
-      <input type="submit" id="submit" class="fadeIn fourth" value="Log In" onclick="staticDashboard()">
+      <input type="submit" id="submit" class="fadeIn fourth" value="Log In" onclick="dynamicDashboard()">
     </form>
     <!-- Register Form -->
     <form id="register"  class="input-group">
@@ -43,6 +43,7 @@
 </div>
 <!-- partial -->
   
+<script src="./js/auth.js"></script>
 <script>
 	var x=document.getElementById("login");
 	var y=document.getElementById("register");
@@ -70,12 +71,30 @@
         bt2.classList.remove("active");
     }
     
-    
-//NOT CORRECT WAY(STATIC)
-    
 	//document.getElementById("submit").href=
-    function staticDashboard(){
-        window.location="./dashboard.html";
+    function dynamicDashboard(){
+        var allowed=[0,0];
+        var index;
+        details.forEach((el,i)=>{
+            if(el.userName==document.getElementById("email").value)  
+            {
+                index=i;
+                allowed[0]=1;
+            }
+            
+        })
+        details.forEach((el,i)=>{
+            if(el.password==document.getElementById("password").value)
+                allowed[1]=1;
+        })
+        
+        if(allowed[0]==1&&allowed[1]==1)
+            {
+                loggedUserIndex=index;
+        window.location="./dashboard.html?xckd="+loggedUserIndex;
+            }
+           else
+           alert("WRONG CREDENTIALS");
     }
 </script>
     

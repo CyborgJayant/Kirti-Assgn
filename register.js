@@ -62,7 +62,8 @@ loginForm.addEventListener('submit',(event)=>{
       .then(response => response.text())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));*/
-    //alert("Works");
+
+    
     
     var myHeaders = new Headers();
     fetch("localhost:4000/dashboard",{
